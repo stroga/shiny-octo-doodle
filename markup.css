@@ -1,0 +1,53 @@
+body {
+	margin: 0;
+}
+
+header {
+	background: #ddd;
+}
+
+header .header_wrapper {
+	min-height: 100px;
+}
+
+header h1 {
+	float: left;
+}
+
+header .burger {
+	float: right;
+}
+
+header nav {
+	clear: both;
+   	width: 100%;
+   	text-align: center;
+   	background: grey;
+   	display: none;
+}
+
+header nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+header.open nav {
+	display: block !important;
+}
+
+/* Footer */
+footer {
+	text-align: right;
+}
+
+footer ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+
+}
+
+footer ul li {
+	display: inline;
+}
