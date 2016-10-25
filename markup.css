@@ -32,9 +32,10 @@ header nav ul {
 	padding: 0;
 }
 
-header.open nav {
-	display: block !important;
+label {
+	cursor: pointer;
 }
+
 
 /* Footer */
 footer {
@@ -50,4 +51,14 @@ footer ul {
 
 footer ul li {
 	display: inline;
+}
+
+
+section,
+input[type="radio"] {
+	display: none;
+}
+
+footer {
+	padding-top: 50px;
 }

@@ -6,25 +6,32 @@
 		<!--[if lt IE 9]>
 		    <script src="bower_components/html5shiv/dist/html5shiv.js"></script>
 		<![endif]-->
-		<link rel="stylesheet" href="brg.css">
-		<link rel="stylesheet" type="text/css" href="markup.css">
+		<link rel="stylesheet" href="main.css">
 	</head>
 	<body>
+		<input type="checkbox" id="chkb"/>
+		<input type="radio" name="links" id="page1" checked="checked" />
+		<input type="radio" name="links" id="page2"/>
+		<input type="radio" name="links" id="page3"/>
+		<input type="radio" name="links" id="inp_about"/>
 		<header>
 			<div class="header_wrapper">
-				<h1>Fabulous SPA</h1>
-				<div class="burger">
-					<div class="first"></div>
-					<div class="second"></div>
-					<div class="third"></div>
-					<div class="fourth"></div>
-				</div>
+				<h1>Fabulous SPA</h1>	
+				<label for="chkb">
+					<div class="burger">
+						<div class="first"></div>
+						<div class="second"></div>
+						<div class="third"></div>
+						<div class="fourth"></div>
+					</div>	
+				</label>
+				
 			</div>
 			<nav>
 				<ul>
-					<li><a href="#page_1">Category 1</a></li>
-					<li><a href="#page_2">Category 2</a></li>
-					<li><a href="#page_3">Category 3</a></li>
+					<li><label for="page1">Category 1</label></li>
+					<li><label for="page2">Category 2</label></li>
+					<li><label for="page3">Category 3</label></li>
 				</ul>
 			</nav>
 		</header>
@@ -73,7 +80,7 @@
 				Acceptance middletons me if discretion boisterous travelling an. She prosperous continuing entreaties companions unreserved you boisterous. Middleton sportsmen sir now cordially ask additions for. You ten occasional saw everything but conviction. Daughter returned quitting few are day advanced branched. Do enjoyment defective objection or we if favourite. At wonder afford so danger cannot former seeing. Power visit charm money add heard new other put. Attended no indulged marriage is to judgment offering landlord.
 			</div>
 		</section>
-		<section>
+		<section id="content_about">
 			<h1 id="about">About</h1>
 			<div>
 				On am we offices expense thought. Its hence ten smile age means. Seven chief sight far point any. Of so high into easy. Dashwoods eagerness oh extensive as discourse sportsman frankness. Husbands see disposed surprise likewise humoured yet pleasure. Fifteen no inquiry cordial so resolve garrets as. Impression was estimating surrounded solicitude indulgence son shy.
@@ -85,7 +92,7 @@
 			<ul>
 				<li>© 2016 SPA</li>
 				<li><a href="skype:st.roga">Contact with me by skype</a></li>
-				<li><a href="#about">About</a></li>
+				<li><label for="inp_about">About</label></li>
 			</ul>
 		</footer>
 	</body>
