@@ -12,12 +12,12 @@
 				Registration form
 			</legend>
 			<label>Name
-			<input type="text" name="reg_name">
+			<input type="text" name="reg_name" required>*
 			</label>
 			<br>
 			<br>
 			<label>Surname
-			<input type="text" name="reg_surname">	
+			<input type="text" name="reg_surname" required>*
 			</label>
 			<br>
 			<br>
@@ -32,17 +32,17 @@
 			</label>
 			<br>
 			<br>
-			<label for="age">Age: 
-				<input type="number" id="age" min="18" max="99" required>	
+			<label for="age">Age
+				<input type="number" id="age" min="18" max="99" required>*
 			</label>
 			<br>
 			<br>
 			<fieldset>
 				<legend>
-					Shipping adress
+					Shipping
 				</legend>
 				Country(African)
-				<select form="reg_form" name="reg_country">
+				<select form="reg_form" name="reg_country" required>
 					<option value="Afghanistan">Afghanistan</option>
 					<option value="Armenia">Armenia</option>
 					<option value="Azerbaijan">Azerbaijan</option>
@@ -51,27 +51,46 @@
 					<option value="Saudi Arabia">Saudi Arabia</option>
 					<option value="Syria">Syria</option>
 					<option value="Thailand">Thailand</option>
-				</select>
+				</select>*
 				<br>
 				<br>
 				<label>City
-					<input type="text" name="reg_city">	
+					<input type="text" name="reg_city" required>*	
 				</label>
 				<br>
 				<br>
 				<label>Street
-					<input type="text" name="reg_street">	
+					<input type="text" name="reg_street" required>*	
 				</label>
 				<br>
 				<br>
 				<label>House №
-					<input type="text" name="reg_house">	
+					<input type="number" name="reg_house" required>*	
 				</label>
 				<br>
 				<br>
 				<label>ZIP code
-					<input type="text" maxlength="6">	
+					<input type="number" name="reg_zip" required>*	
 				</label>
+				<br>
+				<br>
+				<label>Delivery day
+					<input type="date" name="reg_date" min="2016-11-01" required>*	
+				</label>
+				<br>
+				<br>
+				<label>Phone
+					<input type="tel" name="reg_tel">
+				</label>
+				<br>
+				<br>
+				<label>Additional information
+					<br>
+					<textarea name="additional_info" maxlength="256" form="reg_form" cols="30" rows="5">
+					
+					</textarea>
+				</label>
+				
 			</fieldset>
 			
 			<br>
@@ -110,16 +129,30 @@
 			<br>
 			<br>
 			<label>Login
-				<input type="text" name="reg_email">
+				<input type="text" name="reg_login" required>*
+			</label>
+			<br>
+			<br>
+			<label>Email
+				<input type="email" name="reg_email" required pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">*
 			</label>
 			<br>
 			<br>
 			<label>Password
-				<input type="password" name="reg_pass">
+				<input type="password" name="reg_pass" required>*
 			</label>
 			<br>
 			<br>
+			<label>Password confirmation
+				<input type="password" name="reg_pass_conf" required>*
+			</label>
+			<br>
+			<br>
+			<sub><mark>* mandatory fields</mark></sub>
+			<br>
+			<br>
 			<input type="submit" value="Register">
+			
 		</fieldset>
 
 	</form>
